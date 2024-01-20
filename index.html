@@ -60,6 +60,8 @@
     </div>
   </nav>
 
+  
+
 
 
   <!-- Login Modal -->
@@ -140,10 +142,35 @@
     </div>
   </div>
 
+<!-- Clock -->
+  <style>
+        #time{
+          color: whitesmoke;
+          border: 1px solid black;
+          border-radius: 6px ;
+/*           background-color: rgb(80, 55, 55); */
+      }
+      </style>
+
+   <div class="containerClock">
+        Time Now : <h2><span id="time"></span> </h2>
+    </div>
+    
+    
+    
+    <script>
+
+        function updateTime() {
+            time = new Date();
+            document.getElementById('time').innerHTML = time;
+        }
+
+        setInterval(updateTime, 1000)
 
 
+    </script>
 
-
+<!-- Clock End -->
 
 
 
