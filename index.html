@@ -162,7 +162,8 @@
     <script>
         function updateTime() {
             time = new Date();
-            document.getElementById('time').innerHTML = time;
+            dt = time.toDateString();
+            document.getElementById('time').innerHTML = dt;
         }
         setInterval(updateTime, 1000)
     </script>
